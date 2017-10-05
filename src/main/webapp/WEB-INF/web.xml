@@ -5,21 +5,11 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>HelloWorld</servlet-name>
-  	<display-name>HelloWorld</display-name>
-  	<description></description>
-  	<servlet-class>HelloWorld</servlet-class>
-  </servlet>
-  <servlet>
   	<servlet-name>TwilioSend</servlet-name>
   	<display-name>TwilioSend</display-name>
   	<description></description>
   	<servlet-class>TwilioSend</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>HelloWorld</servlet-name>
-  	<url-pattern>/HelloWorld</url-pattern>
-  </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>TwilioSend</servlet-name>
   	<url-pattern>/TwilioSend</url-pattern>
