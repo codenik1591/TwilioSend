@@ -19,8 +19,7 @@ public class TwilioSend extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().print("Hello this message service is owned by Nikhil");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -39,6 +38,7 @@ public class TwilioSend extends HttpServlet {
 		).create();
 
 		System.out.println(message.getSid());
+		
 	}
 
 	
