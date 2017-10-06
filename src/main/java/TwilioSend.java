@@ -30,7 +30,7 @@ public class TwilioSend extends HttpServlet {
 		String authToken = "bddb0ad5fe6f8bd65a8146346b0effbf";
 
 		Twilio.init(accountSid, authToken);
-		Message message = Message.creator(new PhoneNumber("+15512295964"), // to
+		Message message = Message.creator(new PhoneNumber("+19173490168"), // to
 				new PhoneNumber("+17866810244"), // from
 				"Hello from NIKHIL KANOJIA CS 643 Fall 2017" // body
 		).create();
