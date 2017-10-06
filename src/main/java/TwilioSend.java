@@ -17,30 +17,25 @@ public class TwilioSend extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.getWriter().print("Hello this message service is owned by Nikhil");
+		response.getWriter().print("Happy to successfully send you the message.. :) :) ");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		
+
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		
+
 		String accountSid = "AC0b0ea7eb42a948256da95fcef1571ca1";
 		String authToken = "bddb0ad5fe6f8bd65a8146346b0effbf";
 
 		Twilio.init(accountSid, authToken);
-		Message message = Message.creator(
-				new PhoneNumber("+17866810244"), // to
-				new PhoneNumber("+12016162144"), // from
-				"Nikhil ke dimaag ka shot ho gaya hai" // body
+		Message message = Message.creator(new PhoneNumber("+15512295964"), // to
+				new PhoneNumber("+17866810244"), // from
+				"Hello from NIKHIL KANOJIA CS 643 Fall 2017" // body
 		).create();
 
 		System.out.println(message.getSid());
-		
+
 	}
-
-	
-
 }
