@@ -22,6 +22,8 @@ public class TwilioSend extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
@@ -31,7 +33,7 @@ public class TwilioSend extends HttpServlet {
 		Twilio.init(accountSid, authToken);
 		Message message = Message.creator(
 				new PhoneNumber("+17866810244"), // to
-				new PhoneNumber("+15512295964"), // from
+				new PhoneNumber("+12016162144"), // from
 				"Nikhil ke dimaag ka shot ho gaya hai" // body
 		).create();
 
